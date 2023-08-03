@@ -6,6 +6,7 @@ import Home from './page/Home';
 import Not from './page/Not';
 import Router from './page/Router';
 import StateProps from './page/StateProps';
+import Hehe from './page/hehe';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Link to="/css"> CSS 활용 </Link>
             <Link to="/img"> IMAGE 활용 </Link>
             <Link to="/router" state="a100"> Router 페이지 이동 </Link>
+            <Link to="/hehe"> hehe 페이지 이동 </Link>
             <Link to="/stateprops" > StateProps </Link>
           </nav>
         </header>
@@ -29,6 +31,7 @@ function App() {
             <Route path='/img' element={ <Image/> } />
             <Route path='/router' element={ <Router/> } />
             <Route path='/stateprops' element={ <StateProps data="1000" name="hehe"/> } />
+            <Route path='/hehe' element={ <Hehe/> } />
             <Route path='/*' element={ <Not/> } />
           </Routes>
         </main>
